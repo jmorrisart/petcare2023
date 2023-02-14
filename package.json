@@ -1,5 +1,6 @@
 {
-  "name": "https://jmorrisart.github.io/petcare2023",
+  "homepage": ".",
+  "name": "petcare2023",
   "version": "0.1.0",
   "private": false,
   "dependencies": {
