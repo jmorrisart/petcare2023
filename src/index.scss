@@ -1,0 +1,13 @@
+@import 'variables.scss';
+
+body {
+  font-family: $bodyFont;
+}
+
+h1 {
+  font-family: $headerFont;
+}
+
+.pet-image {
+  width: 200px;
+}
