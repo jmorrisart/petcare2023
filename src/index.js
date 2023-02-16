@@ -3,6 +3,8 @@ import ReactDOM from "react-dom";
 import { createRoot } from 'react-dom/client';
 import './index.scss';
 
+import Accordion from './components/accordion';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faHeart, faTruckMedical, faHorse, faDog } from '@fortawesome/free-solid-svg-icons';
@@ -18,6 +20,12 @@ const root = createRoot(domNode);
 library.add(faHeart, faTruckMedical, faHorse, faDog);
 
 const App = () => {
+
+  const accordionData = [
+    { title: 'This Title', content: 'Lots of cool content' },
+    { title: 'Second Title', content: 'Less cool content, but content nonetheless' }
+  ];
+
   return (
     <div className="App">
       <h1>Morris Family Menagerie</h1>
@@ -28,6 +36,12 @@ const App = () => {
       <FontAwesomeIcon icon="dog" />
 
       <img src={Hobbes} className="pet-image" />
+
+      <div className="accordion">
+        { accordionData.map(({title, content}) => (
+          <Accordion title={title} content={content} />
+        ))}
+      </div>
     </div>
   );
 }
