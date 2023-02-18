@@ -20,26 +20,103 @@ const root = createRoot(domNode);
 library.add(faHeart, faTruckMedical, faHorse, faDog);
 
 const App = () => {
-
   const accordionData = [
-    { title: 'This Title', content: 'Lots of cool content' },
-    { title: 'Second Title', content: 'Less cool content, but content nonetheless' }
+    { 
+      image: Finn, 
+      name: 'Finn', 
+      content: [
+        {
+          header: '2x a day',
+          subheaders: [
+            { bold: '1.5 cups ', regular: 'kibble' },
+            { bold: '1 Cosequine ', regular: 'tablet' },
+          ],
+          italic: 'Add water to kibble'
+        },
+        {
+          header: '1x a day',
+          subheaders: [
+            { bold: '1 eye drop ', regular: 'in each eye ', italic: 'white bottle first' },
+            { bold: '1 eye drop ', regular: 'in each eye ', italic: 'dark bottle second' }
+          ]
+        }
+      ]
+    }, 
+    {
+      image: Calvin,
+      name: 'Calvin',
+      content: [
+        {
+          header: '2x a day',
+          subheaders: [
+            { bold: '1 baggie ', regular: 'of grain ', italic: 'soaked' },
+            { bold: '1/2 bucket ', regular: 'of chaffhaye ' },
+            { bold: '1 full ', regular: 'hay pillow' }
+          ],
+          italic: 'Lock Calvin in his stall after giving him his grain, and before feeding Hobbes.'
+        }
+      ]
+    },
+    {
+      image: Hobbes,
+      name: 'Hobbes',
+      content: [
+        {
+          header: '2x a day',
+          subheaders: [
+            { bold: '1 baggie ', regular: 'of grain ', italic: 'soaked' },
+            { bold: '1/2 bucket ', regular: 'of chaffhaye ' },
+            { bold: '1/4 Previcox ', regular: 'pill ', italic: 'every other day' }
+          ],
+          italic: 'Pour soaked grain into large rubber bucket in his stall.'
+        }
+      ]
+    },
+    {
+      image: Spaceman,
+      name: 'Spaceman',
+      content: [
+        {
+          header: '2x a day',
+          subheaders: [
+            { bold: '1 baggie ', regular: 'of grain ', italic: 'soaked' },
+            { bold: '1 flake ', regular: 'of hay ', italic: 'shared with Spiff' }
+          ],
+          italic: 'After the donkeys eat their grain, throw the hay out in the pen and shut the barn door behind them.'
+        }
+      ]
+    },
+    {
+      image: Spiff,
+      name: 'Spiff',
+      content: [
+        {
+          header: '2x a day',
+          subheaders: [
+            { bold: '1 baggie ', regular: 'of grain ', italic: 'soaked' },
+            { bold: '1 flake ', regular: 'of hay ', italic: 'shared with Spaceman' }
+          ],
+          italic: 'After the donkeys eat their grain, throw the hay out in the pen and shut the barn door behind them.'
+        }
+      ]
+    }
   ];
 
   return (
     <div className="App">
       <h1>Morris Family Menagerie</h1>
-      <h2>How are you!</h2>
-      <FontAwesomeIcon icon="heart" />
-      <FontAwesomeIcon icon="truck-medical" />
+      <h3>
+        <FontAwesomeIcon icon="heart" className="heart" />
+        <span>Thank you</span>
+        <FontAwesomeIcon icon="heart" className="heart" />
+      </h3>
+      {/* <FontAwesomeIcon icon="heart" />
       <FontAwesomeIcon icon="horse" />
-      <FontAwesomeIcon icon="dog" />
-
-      <img src={Hobbes} className="pet-image" />
+      <FontAwesomeIcon icon="dog" /> */}
 
       <div className="accordion">
-        { accordionData.map(({title, content}) => (
-          <Accordion title={title} content={content} />
+        { accordionData.map(({image, name, content}) => (
+          <Accordion image={image} name={name} content={content} />
         ))}
       </div>
 

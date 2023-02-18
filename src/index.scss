@@ -6,10 +6,61 @@ body {
 
 h1 {
   font-family: $headerFont;
+  text-align: center;
+  color: $siteHeaderColor;
+  margin-top: 24px;
+}
+
+h3 {
+  color: $subHeaderColor;
+  text-align: center;
+
+  span {
+    margin: 0 12px;
+  }
+
+  .heart {
+    color: $heartColor;
+    font-size: 14px;
+  }
 }
 
 .pet-image {
-  width: 200px;
+  width: 50%;
+  margin-left: 25%;
+}
+
+.pet-name {
+  font-family: $headerFont;
+  color: $black;
+  font-size: 36px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  width: 40%;
+}
+
+.name-banner {
+  width: 35%;
+  height: 48px;
+  background-color: $bannerColor;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.left {
+  margin-left: -20px;
+  clip-path: polygon(0% 0%, 100% 0, 90% 50%, 100% 100%, 0% 100%);
+}
+
+.right {
+  margin-right: -20px;
+  float: right;
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%, 10% 50%);
+}
+
+.accordion {
+  margin-bottom: 36px;
 }
 
 .menu-btn {
