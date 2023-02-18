@@ -1,9 +1,9 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import { createRoot } from 'react-dom/client';
 import './index.scss';
 
 import Accordion from './components/accordion';
+import Menubutton from './components/menubutton';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -42,6 +42,8 @@ const App = () => {
           <Accordion title={title} content={content} />
         ))}
       </div>
+
+      <Menubutton />
     </div>
   );
 }
