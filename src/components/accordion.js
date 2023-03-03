@@ -20,8 +20,21 @@ const Accordion = ({ image, name, content }) => {
                 </div>
                 {isActive && 
                     <div className="accordion-content">
-                       { content.map(({header, subheaders, italic}) => (
-                            <div>{header}</div>
+                       { content.map(({id, header, subheaders, notes}) => (
+                            <div key={id} className="content-container">
+                                <div className="header">{header}</div>
+
+                                { subheaders.map(({id, bold, regular}) => (
+                                    <div key={id} className="subheaders">
+                                       <p>
+                                        <span className="bold">{bold}</span>
+                                        <span className="regular">{regular}</span>
+                                       </p>
+                                    </div>
+                                ))}
+
+                                <div className="notes">{notes}</div>
+                            </div>
                         ))}
                     </div>
                 }

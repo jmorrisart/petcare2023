@@ -63,6 +63,46 @@ h3 {
   margin-bottom: 36px;
 }
 
+.content-container {
+  margin-left: 24px;
+  margin-top: 24px;
+  margin-right: 24px;
+}
+
+.header {
+  font-size: 24px;
+  font-family: $headerFont;
+  color: $siteHeaderColor;
+  margin-bottom: 12px;
+}
+
+.notes {
+  font-size: 18px;
+  font-family: $bodyFont;
+  color: $black;
+  font-style: italic;
+  margin-top: 18px;
+}
+
+.subheaders {
+  font-family: $bodyFont;
+  font-size: 18px;
+  color: $black;
+  margin-top: 6px;
+
+  p {
+    margin: 0;
+  }
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.regular {
+  font-weight: 400;
+}
+
 .menu-btn {
   background-color: $emergency;
   border-radius: 50%;
