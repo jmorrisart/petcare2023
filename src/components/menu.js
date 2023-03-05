@@ -1,10 +1,9 @@
 import React, { Component, useState } from 'react';
 
-const Menu = () => {
-    // const [isActive, setIsActive] = useState(false);
+const Menu = (props) => {
     return (
         <React.Fragment>
-            <div className="menu">
+            <div className={`menu ${props.showmenu ? "" : "close"}`}>
             </div>
         </React.Fragment>
     )
