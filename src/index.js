@@ -34,14 +34,14 @@ const App = () => {
           ],
           notes: 'Add water to kibble'
         },
-        {
-          id: 'FinnContent2',
-          header: '1x a day',
-          subheaders: [
-            { id: 'FSubheader2-1', bold: '1 eye drop ', regular: 'in each eye ', italic: 'white bottle first' },
-            { id: 'FSubheader2-2', bold: '1 eye drop ', regular: 'in each eye ', italic: 'dark bottle second' }
-          ]
-        }
+        // {
+        //   id: 'FinnContent2',
+        //   header: '1x a day',
+        //   subheaders: [
+        //     { id: 'FSubheader2-1', bold: '1 eye drop ', regular: 'in each eye ', italic: 'white bottle first' },
+        //     { id: 'FSubheader2-2', bold: '1 eye drop ', regular: 'in each eye ', italic: 'dark bottle second' }
+        //   ]
+        // }
       ]
     }, 
     { id: '2',
@@ -72,13 +72,14 @@ const App = () => {
             { id: 'HSubheader1-2', bold: '1/2 bucket ', regular: 'of chaffhaye ' }
           ],
           notes: 'Pour soaked grain into large rubber bucket in his stall.'
-        }, {
-          id: 'HobbesContent2',
-          header: '1x a day',
-          subheaders: [
-            { id: 'HSubheader2-1', bold: '1/4 Previcox ', regular: 'pill ', italic: 'every other day' }
-          ]
-        }
+        }, 
+        // {
+        //   id: 'HobbesContent2',
+        //   header: '1x a day',
+        //   subheaders: [
+        //     { id: 'HSubheader2-1', bold: '1/4 Previcox ', regular: 'pill ', italic: 'every other day' }
+        //   ]
+        // }
       ]
     },
     { id: '4',

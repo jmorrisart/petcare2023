@@ -24,11 +24,12 @@ const Accordion = ({ image, name, content }) => {
                             <div key={id} className="content-container">
                                 <div className="header">{header}</div>
 
-                                { subheaders.map(({id, bold, regular}) => (
+                                { subheaders.map(({id, bold, regular, italic}) => (
                                     <div key={id} className="subheaders">
                                        <p>
                                         <span className="bold">{bold}</span>
                                         <span className="regular">{regular}</span>
+                                        <span className="italic">{italic}</span>
                                        </p>
                                     </div>
                                 ))}
